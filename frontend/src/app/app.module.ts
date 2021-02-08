@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContatoComponent } from './contato/contato.component';
 import {ContatoService} from './contato.service'
 import {MatButtonModule} from '@angular/material/button';
+import {HttpClientModule} from '@angular/common/http'
 
 import {MatInputModule} from '@angular/material/input';
 @NgModule({
@@ -19,6 +20,7 @@ import {MatInputModule} from '@angular/material/input';
     AppRoutingModule,
     MatButtonModule,
     MatInputModule,
+    HttpClientModule,
     MatToolbarModule,
     BrowserAnimationsModule
   ],

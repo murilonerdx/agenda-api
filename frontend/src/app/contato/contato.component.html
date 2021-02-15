@@ -1,15 +1,15 @@
 
 <mat-toolbar>Contatos</mat-toolbar>
-<form class="example-form ">
+<form [formGroup]="formulario" (ngSubmit)="submit()">
     <mat-form-field class="example-full-width ">
       <mat-label>Nome: </mat-label>
-      <input matInput placeholder="Digite seu nome">
+      <input formControlName="nome" matInput placeholder="Digite seu nome">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Email: </mat-label>
-        <input matInput placeholder="Digite seu email">
+        <input formControlName="email" matInput placeholder="Digite seu email">
       </mat-form-field>
 
-      <button type="submit" mat-button color="primary">Cadastrar</button>
+      <button type="submit" mat-button color="primary">Adicionar</button>
   </form>

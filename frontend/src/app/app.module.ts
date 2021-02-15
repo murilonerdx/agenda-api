@@ -8,6 +8,7 @@ import { ContatoComponent } from './contato/contato.component';
 import {ContatoService} from './contato.service'
 import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from '@angular/common/http'
+import {ReactiveFormsModule} from '@angular/forms'
 
 import {MatInputModule} from '@angular/material/input';
 @NgModule({
@@ -20,6 +21,7 @@ import {MatInputModule} from '@angular/material/input';
     AppRoutingModule,
     MatButtonModule,
     MatInputModule,
+    ReactiveFormsModule,
     HttpClientModule,
     MatToolbarModule,
     BrowserAnimationsModule
